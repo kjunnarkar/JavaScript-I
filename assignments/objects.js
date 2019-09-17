@@ -19,26 +19,100 @@ const example = {
 
 // Write your intern objects here:
 
+const Melloy = {
+  ID: 1,
+  Name: "Mitzi",
+  Email: "mmelloy@psu.edu",
+  Gender: "F"
+};
+
+const Diben = {
+  ID: 2,
+  Name: "Kennan",
+  Email: "kdiben1@tinypic.com",
+  Gender: "M",
+  Hello: function() {
+    return "Hello, my name is " + this.Name;
+  }
+};
+
+const Mummery = {
+  ID: 3,
+  Name: "Keven",
+  Email: "kmummery2@wikimedia.org",
+  Gender: "M"
+};
+
+const Martinson = {
+  ID: 4,
+  Name: "Gannie",
+  Email: "gmartinson3@illinois.edu",
+  Gender: "M"
+};
+
+const Daine = {
+  ID: 5,
+  Name: "Antoinette",
+  Email: "adaine5@samsung.com",
+  Gender: "F",
+  Mult: function(num1, num2) {
+    return (num1 * num2); 
+  }
+};
+
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
 
+console.log(Melloy.Name);
+
 // Kennan's ID
+
+console.log(Diben.ID);
 
 // Keven's email
 
+console.log(Mummery.Email);
+
 // Gannie's name
 
+console.log(Martinson.Name);
+
 // Antonietta's Gender
+
+console.log(Daine.Gender);
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
+/*const Diben = {
+  ID: 2,
+  Name: "Kennan",
+  Email: "kdiben1@tinypic.com",
+  Gender: "M",
+  Hello: function() {
+    return "Hello, my name is " + this.Name;
+  }
+};*/
+console.log(Diben.Hello());
+
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+/*const Daine = {
+  ID: 5,
+  Name: "Antoinette",
+  Email: "adaine5@samsung.com",
+  Gender: "F",
+  Mult: function(num1, num2) {
+    return (num1 * num2); 
+  }
+};*/
+
+console.log(Daine.Mult(3, 4));
 
 // === Great work! === Head over to the the arrays.js. You may come back and attempt the Stretch Challenge once you have completed the challenges in arrays.js and function-conversion.js.
 
